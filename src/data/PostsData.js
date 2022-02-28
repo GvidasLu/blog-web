@@ -7,7 +7,7 @@ const PostsData = [
     {
         id:2,
         title:"2 Labai geras poratas",
-        content:"labai geras gerass portad"
+        content:"labai gerasss gerass portad"
     },
     {
         id:3,
