@@ -1,4 +1,5 @@
 import Post from "../post/Post"
+import PostsData from "../../data/PostsData"
 
 const Posts = () => {
     return(
@@ -6,12 +7,13 @@ const Posts = () => {
             <div class="container px-lg-5">
                 {/*<!-- Page Features-->*/}
                 <div class="row gx-lg-5">
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
+                    {PostsData.map((post)=>
+                        <Post
+                            key ={post.id}
+                            title ={post.title}
+                            content ={post.content}
+                        />
+                    )}
                 </div>
             </div>
         </section>
