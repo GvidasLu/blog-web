@@ -1,17 +1,17 @@
 import Post from "../post/Post"
-import PostsData from "../../data/PostsData"
 
-const Posts = () => {
+const Posts = (props) => {
     return(
         <section class="pt-4">
             <div class="container px-lg-5">
                 {/*<!-- Page Features-->*/}
                 <div class="row gx-lg-5">
-                    {PostsData.map((post)=>
+                    {props.posts.map((post)=>
                         <Post
                             key ={post.id}
                             title ={post.title}
                             content ={post.content}
+                            category = {post.category}
                         />
                     )}
                 </div>
