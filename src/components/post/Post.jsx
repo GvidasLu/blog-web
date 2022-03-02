@@ -14,6 +14,7 @@ const Post = (props) => {
                                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
                                 <h2 class="fs-4 fw-bold">{props.title}</h2>
                                 <p class="mb-0">{props.content}</p>
+                                <p class="mb-0">kategorija:{props.category}</p>
                                 {readStatus === 'Read done' ?
                                     <p>Naujiena perskaityta</p>:  //true
                                     <p>Nauujiena neperskaityta</p> //false
